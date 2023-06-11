@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css">
+    <style>
+    body
+    {
+        Background-image:url('IMG_5953.JPG');
+            margin-top:150px;
+            margin-bottom:500px;
+            margin-left:50px;
+            margin-right:800px;
+    }
+    nav > ul 
+    {
+      background-color: white;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a 
+    {
+      color: inherit; 
+      display: block; 
+      font-size: 1.2rem;
+      padding: 10px;
+      text-decoration: none; 
+    }
+    nav a:hover 
+    {
+      background-color: rgb(115, 115, 115);
+      color: white;
+    }
+    </style>
+  </head>
+<body>
+    <div class="homework-sidebar homework-bar-block homework-border-right" style="display:none;margin-right:200px; margin-bottom:600px;" id="mySidebar">
+      <button onclick="homework_close()" class="Sidebar">Close &times;</button>
+      <nav>
+        <ul>
+          <li><a href="myLove.html" class="homework-bar-item homework-button">Photo</a></li>
+          <li><a href="word.html" class="homework-bar-item homework-button">Word</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="homework-teal">
+      <button class="homework-button" onclick="homework_open()" style="width: 80px; height:50px;">Gianna</button>
+    </div>
+<script>
+  function homework_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  }
+  function homework_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+</body>
+</html>
